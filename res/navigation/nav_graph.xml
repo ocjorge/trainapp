@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.example.trainapp.HomeScreen"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_screen">
+        <action
+            android:id="@+id/action_homeScreen_to_ticketsFragment"
+            app:destination="@id/ticketsFragment" />
+        <action
+            android:id="@+id/action_homeScreen_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_homeScreen_to_adviceFragment"
+            app:destination="@id/adviceFragment" />
+        <action
+            android:id="@+id/action_homeScreen_to_alertsFragment"
+            app:destination="@id/alertsFragment" />
+        <action
+            android:id="@+id/action_homeScreen_to_incidentFragment"
+            app:destination="@id/incidentFragment" />
+        <action
+            android:id="@+id/action_homeScreen_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ticketsFragment"
+        android:name="com.example.trainapp.TicketsFragment"
+        android:label="Tickets"
+        tools:layout="@layout/fragment_tickets" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.trainapp.MapFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_map" />
+
+    <fragment
+        android:id="@+id/adviceFragment"
+        android:name="com.example.trainapp.AdviceFragment"
+        android:label="Submit Advice"
+        tools:layout="@layout/fragment_advice" />
+
+    <fragment
+        android:id="@+id/alertsFragment"
+        android:name="com.example.trainapp.AlertsFragment"
+        android:label="Alerts"
+        tools:layout="@layout/fragment_alerts" />
+
+    <fragment
+        android:id="@+id/incidentFragment"
+        android:name="com.example.trainapp.IncidentFragment"
+        android:label="Report Incident"
+        tools:layout="@layout/fragment_incident" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.trainapp.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
+
